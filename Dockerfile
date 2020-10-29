@@ -22,6 +22,7 @@ RUN /usr/bin/python -m venv /site/env
 RUN . /site/env/bin/activate && python -m pip install --user --upgrade pip && \
 python -m pip install -U Cython wheel numpy pandas
 RUN . /site/env/bin/activate && python -m pip install -U -r /site/requirements.txt
+RUN . /site/env/bin/activate && python -m pip uninstall -y shapely && python -m pip install shapely --no-binary shapely
 
 # Set-up Xvfb for any headless web requirements
 RUN echo "#!/bin/sh" > /site/Xvfb.start
