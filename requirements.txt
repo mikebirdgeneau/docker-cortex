@@ -11,6 +11,7 @@ branca
 cachetools
 cairocffi
 CairoSVG
+cartophy
 certifi
 cffi
 chardet
