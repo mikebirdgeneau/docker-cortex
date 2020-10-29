@@ -19,7 +19,7 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 2
 WORKDIR /site
 RUN /usr/bin/python -m venv /site/env
 RUN . /site/env/bin/activate && python -m pip install --user --upgrade pip && \
-python -m pip install -U Cython wheel
+python -m pip install -U Cython wheel numpy pandas
 RUN . /site/env/bin/activate && python -m pip install -U -r /site/requirements.txt
 
 # Set-up Xvfb for any headless web requirements
