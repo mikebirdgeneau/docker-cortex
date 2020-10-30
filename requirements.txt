@@ -66,6 +66,7 @@ django-split-settings
 django-sql-explorer
 django-tables2
 django-tracking2
+django-treenode
 django-modeltranslation
 django-webtest
 djangorestframework
