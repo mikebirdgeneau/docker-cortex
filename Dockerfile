@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install required packages for application using apt
 RUN apt update && apt upgrade -y && apt install -yq csh bash g++ gcc git cron procps rsyslog \
  postgresql-client postgresql-client-common \
- postgis libgdal-dev binutils libproj-dev gdal-bin \
+ postgis libgdal-dev binutils libproj-dev libgeo-proj4-perl gdal-bin \
  unixodbc-dev libffi-dev postfix sudo bsd-mailx \
  build-essential libssl-dev ca-certificates libpq-dev libpangoft2-1.0-0 \
  libldap2-dev libsasl2-dev slapd ldap-utils tox lcov valgrind \
