@@ -1,4 +1,4 @@
-FROM debian:testing-slim
+FROM debian:stable-slim
 ENV TZ America/Edmonton
 ENV DEBIAN_FRONTEND noninteractive
 
