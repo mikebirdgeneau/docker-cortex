@@ -118,7 +118,7 @@ pyodbc
 pypandoc
 pyparsing
 Pyphen
-pyproj
+pyproj==2.6.1
 python-dateutil
 python-docx
 python-pam
