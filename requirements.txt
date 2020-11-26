@@ -102,6 +102,7 @@ munch
 numpy
 odfpy
 openapi-codec
+opencv-python
 openpyxl
 packaging
 palettable
