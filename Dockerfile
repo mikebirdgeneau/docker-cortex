@@ -12,7 +12,8 @@ RUN apt update && apt upgrade -y && apt install -yq csh bash g++ gcc git cron pr
  python3 python3-dev python3-pip python3-venv vim wget locales \
  xvfb chromium chromium-driver graphviz pandoc libgdal-dev \
  uwsgi uwsgi-plugin-python3 \
- python-mpltoolkits.basemap python-mpltoolkits.basemap-data \
+ python3-mpltoolkits.basemap python-mpltoolkits.basemap-data \
+ python3-cartopy python-cartopy-data \
  sssd-krb5 sssd-krb5-common nis autofs nfs-common \
  gettext task-chinese-s
  
