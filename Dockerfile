@@ -3,7 +3,7 @@ ENV TZ America/Edmonton
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install required packages for application using apt
-RUN apt update && apt upgrade -y && apt install -yq csh bash g++ gcc git cron procps rsyslog \
+RUN apt update && apt upgrade -y && apt install -yq --no-install-recommends csh bash g++ gcc git cron procps rsyslog \
  postgresql-client postgresql-client-common \
  postgis libgdal-dev binutils libproj-dev gdal-bin proj-bin \
  unixodbc-dev libffi-dev postfix sudo bsd-mailx \
@@ -15,7 +15,8 @@ RUN apt update && apt upgrade -y && apt install -yq csh bash g++ gcc git cron pr
  python3-mpltoolkits.basemap python-mpltoolkits.basemap-data \
  python3-cartopy python-cartopy-data \
  sssd-krb5 sssd-krb5-common nis autofs nfs-common \
- gettext task-chinese-s
+ gettext task-chinese-s \
+ && rm -rf /var/lib/apt/lists/*
  
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 2
 
